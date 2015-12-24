@@ -10,6 +10,8 @@ import time
 from  datetime import datetime
 
 
+#new line 
+
 MAX_ALPHA=1.0
 ALPHA_STEP=MAX_ALPHA /(BREAK_SECOND*1000 /10) # 1000 is covert to msecond, 10 is .after(10) event
 #!env python
@@ -62,7 +64,6 @@ class FadeToplevel(tk.Toplevel):
         self.geometry("%dx%d%+d%+d" % (1920, 1080, 0, 0))
         self.fade_in()
         # self.mainloop()
-
     def fade_in(self):
         max_alpha=MAX_ALPHA
         duration=10  #time to wait
